@@ -1,0 +1,76 @@
+/* BASIC RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f4f7fb;color:#202124;line-height:1.6}
+
+/* CONTAINER */
+.container{max-width:1100px;margin:0 auto;padding:20px}
+
+/* HEADER */
+.site-header{background:#013A63;color:#fff;padding:14px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:110px;border-radius:6px}
+.site-header h1{font-size:20px;margin:0}
+.site-header small{display:block;font-size:12px;color:#d0e7ff}
+
+/* NAV */
+.main-nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600}
+.btn{background:#0b7a3f;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;display:inline-block}
+.btn-light{background:#fff;color:#013A63;padding:8px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.2)}
+.btn-outline{background:transparent;border:1px solid #fff;padding:8px 10px;border-radius:6px;color:#fff;text-decoration:none}
+
+/* HERO */
+.hero{background:linear-gradient(90deg,#e6f2ff,#fff);padding:50px 0;text-align:center}
+.hero h2{font-size:30px;color:#013A63;margin-bottom:8px}
+.hero p{color:#333;margin-bottom:16px}
+.hero-actions a{margin:0 8px}
+
+/* SECTIONS */
+.section{padding:30px 0;background:#fff;margin-top:20px;border-radius:8px;box-shadow:0 2px 8px rgba(3,15,30,0.03)}
+.two-col{display:flex;gap:20px;justify-content:space-between}
+.two-col > div{flex:1}
+
+/* GALLERY */
+.gallery{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.gallery img{width:320px;height:200px;object-fit:cover;border-radius:8px}
+
+/* CONTACT FORM */
+.contact-form{max-width:600px;margin:12px auto;display:flex;flex-direction:column;gap:10px}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:6px;border:1px solid #ddd}
+
+/* FOOTER */
+.site-footer{background:#0c1b2b;color:#cfe6ff;padding:20px;margin-top:30px}
+.site-footer p{margin-bottom:8px}
+.socials a{color:#fff;text-decoration:none;margin:0 6px}
+
+/* LOGIN */
+.login-wrap{display:flex;align-items:center;justify-content:center;height:70vh}
+.login-box{background:#fff;padding:30px;border-radius:8px;box-shadow:0 6px 18px rgba(3,15,30,0.08);width:360px;text-align:center}
+.login-box input{width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:6px}
+.login-box .small{font-size:12px;color:#666;margin-top:8px}
+.btn-small{background:#ff6f00;color:#fff;padding:6px 8px;border:none;border-radius:4px}
+
+/* DASHBOARD */
+.dash-header{background:#013A63;color:#fff;padding:12px}
+.dashboard{display:flex;gap:20px}
+.sidebar{width:220px;background:#f8f9fb;padding:18px;border-right:1px solid #e6eef8;height:calc(100vh - 70px);position:sticky;top:70px}
+.sidebar ul{list-style:none}
+.sidebar a{display:block;padding:10px 8px;border-radius:6px;color:#013A63;text-decoration:none;margin-bottom:6px;font-weight:600}
+.sidebar a:hover{background:#013A63;color:#fff}
+.dash-main{flex:1;padding:20px}
+.cards{display:flex;gap:12px}
+.card{flex:1;background:#fff;padding:18px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);text-align:center}
+
+/* PROFILE CARD */
+.profile-card{max-width:320px;margin:16px auto;padding:18px;background:#fff;border-radius:8px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,0.06)}
+.profile-card img{border-radius:50%}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .two-col{flex-direction:column}
+  .gallery img{width:100%}
+  .header-inner{flex-direction:column;gap:10px}
+  .dashboard{flex-direction:column}
+  .sidebar{width:100%;position:relative;height:auto}
+  .dash-main{margin-left:0}
+}

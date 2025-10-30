@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard - KMU TRUST</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="dash-header">
+    <div class="container header-inner">
+      <h1>Admin Dashboard - KMU TRUST</h1>
+      <a href="index.html" class="btn btn-light">View Site</a>
+    </div>
+  </header>
+
+  <div class="dashboard">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#donations">Donations</a></li>
+        <li><a href="#claims">Claims</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="dash-main">
+      <section id="overview" class="dash-section">
+        <h2>Overview</h2>
+        <div class="cards">
+          <div class="card">Members<br><strong>254</strong></div>
+          <div class="card">Donations<br><strong>₹ 1,45,000</strong></div>
+          <div class="card">Claims<br><strong>12</strong></div>
+        </div>
+      </section>
+
+      <section id="members" class="dash-section">
+        <h2>Recent Members</h2>
+        <table class="dash-table">
+          <thead><tr><th>Name</th><th>Phone</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Ramesh</td><td>9454786621</td><td>Active</td><td><button class="btn-small">Block</button></td></tr>
+            <tr><td>Sita</td><td>9876543210</td><td>Active</td><td><button class="btn-small">Verify</button></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="donations" class="dash-section">
+        <h2>Recent Donations</h2>
+        <ul>
+          <li>Rajesh - ₹1000</li>
+          <li>Meena - ₹500</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
