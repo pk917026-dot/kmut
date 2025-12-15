@@ -6,14 +6,6 @@ Route::get('/', function () {
     return view('public.home');
 });
 
-/* 
-| Public ke jitne bhi pages ho sakte hain
-| sab ek hi coming soon page par jayenge
-*/
-Route::any('{any}', function () {
-    return view('public.coming-soon');
-})->where('any', '^(?!admin).*$');
-
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminDashboardController::class, 'index']);
 });
