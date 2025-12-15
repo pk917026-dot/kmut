@@ -1,0 +1,111 @@
+/* ==============================
+   ADMIN PANEL COMPACT MODE
+   ============================== */
+
+/* 🔰 Top Navbar (Green Patti) */
+.admin-navbar {
+    min-height: 46px;            /* पहले ~56px होती है */
+    padding: 0 10px;
+}
+
+/* Navbar brand */
+.admin-navbar .navbar-brand {
+    font-size: 15px;
+    padding: 6px 8px;
+}
+
+/* Top menu items */
+.admin-navbar .nav-link {
+    font-size: 13px;             /* text छोटा */
+    padding: 6px 8px;            /* space कम */
+    line-height: 1.2;
+}
+
+/* Dropdown menu */
+.admin-navbar .dropdown-menu {
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+.admin-navbar .dropdown-item {
+    padding: 6px 12px;
+}
+
+/* ==============================
+   DASHBOARD CONTENT AREA
+   ============================== */
+
+.dashboard-container,
+.container,
+.container-fluid {
+    padding-top: 12px;
+}
+
+/* Dashboard heading */
+.dashboard-title,
+h1, h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* Dashboard cards */
+.card {
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 12px 14px;          /* पहले ज्यादा थी */
+}
+
+/* Card numbers */
+.card h3,
+.card .count {
+    font-size: 20px;
+}
+
+/* Card labels */
+.card p,
+.card small {
+    font-size: 13px;
+}
+
+/* ==============================
+   NOTIFICATIONS
+   ============================== */
+
+.notifications,
+.notifications li {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* ==============================
+   BUTTONS (Dashboard नीचे)
+   ============================== */
+
+.btn {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+/* ==============================
+   TABLES (Future use)
+   ============================== */
+
+.table th,
+.table td {
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+/* ==============================
+   RESPONSIVE SAFETY
+   ============================== */
+
+@media (max-width: 992px) {
+    .admin-navbar .nav-link {
+        padding: 6px 6px;
+        font-size: 13px;
+    }
+}
